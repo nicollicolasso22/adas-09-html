@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Login do sistema</title>
+    <meta charset="UTF-8">
+    <style>
+        /* Tema dark global */
+        :root {
+            color-scheme: dark;
+            --bg: #121212;
+            --surface: #1e1e1e;
+            --input-bg: #252525;
+            --border: #3a3a3a;
+            --text: #e5e5e5;
+            --muted: #a0a0a0;
+            --accent: #6366f1;
+        }
+
+        /* Página */
+        html,
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: Arial, sans-serif;
+        }
+
+        /* Elementos gerais */
+        * {
+            scrollbar-color: #444 var(--bg);
+        }
+
+        div,
+        section,
+        main,
+        header,
+        footer,
+        nav,
+        article,
+        aside,
+        form,
+        fieldset {
+            border-color: var(--border);
+        }
+
+        /* Títulos e textos */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        label,
+        span,
+        legend,
+        li,
+        dt,
+        dd,
+        th,
+        td {
+            color: inherit;
+        }
+
+        /* Inputs e campos de formulário */
+        input,
+        textarea,
+        select {
+            background-color: var(--input-bg);
+            color: var(--text);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 10px 12px;
+            outline: none;
+            accent-color: var(--accent);
+        }
+
+        /* Placeholder */
+        input::placeholder,
+        textarea::placeholder {
+            color: var(--muted);
+            opacity: 1;
+        }
+
+        /* Foco nos campos */
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgb(99 102 241 / 20%);
+        }
+
+        /* Opções dos selects */
+        option {
+            background-color: var(--input-bg);
+            color: var(--text);
+        }
+
+        /* Botões */
+        button,
+        input[type="button"],
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: var(--surface);
+            color: var(--text);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 10px 16px;
+            cursor: pointer;
+        }
+
+        button:hover,
+        input[type="button"]:hover,
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #333;
+        }
+
+        /* Links */
+        a {
+            color: #818cf8;
+        }
+
+        a:hover {
+            color: #a5b4fc;
+        }
+
+        /* Tabelas */
+        table {
+            background-color: var(--surface);
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid var(--border);
+            padding: 10px;
+        }
+
+        th {
+            background-color: #292929;
+        }
+
+        /* Linhas e separadores */
+        hr {
+            border: 0;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Seleção de texto */
+        ::selection {
+            background-color: var(--accent);
+            color: white;
+        }
+
+        /* Campos desativados */
+        input:disabled,
+        textarea:disabled,
+        select:disabled,
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+            Campo de usuário
+            Campo de senha
+            Link para outra página de cadastro
+            Link para outra página de esqueceu a senha
+            Botão de login
+        -->
+    <form action="salvar.php" method="get">
+        <label for="campo-usuario">Usuário</label>
+        <input type="text" id="campo-usuario" name="usuario">
+        <br />
+        <label for="campo-senha">Senha</label>
+        <input type="password" id="campo-senha" name="senha">
+        <br/>
+        <button type="submit">Entrar</button>
+    </form>
+    <a href="esqueci-senha.html">Esqueci a senha</a>
+
+</body>
+
+</html>

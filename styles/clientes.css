@@ -1,0 +1,104 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #1d4ed8;
+}
+
+/* Link Voltar */
+a {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formulário */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Espaçamento dos grupos */
+form > div {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label,
+span {
+    font-size: 14px;
+}
+
+div > label:first-child,
+div > span {
+    font-weight: bold;
+}
+
+/* Campos de texto */
+input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* Campo selecionado */
+input[type="text"]:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Checkbox e radio */
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #2563eb;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+/* Botão Salvar */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    body {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}

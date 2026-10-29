@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de clientes</title>
+    <link rel="stylesheet" href="styles/clientes.css">
+</head>
+<body>
+    <h1>Cadastro de cliente</h1>
+    <a href="index.html">Voltar</a>
+
+    <form method="get" action="salvar-cliente.php">
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" id="campo-nome" name="nome" minlength="3" maxlength="20" required>
+        </div>
+
+        <div>
+            <label for="campo-cpf">CPF</label>
+            <input type="text" id="campo-cpf" name="cpf" minlength="14" maxlength="14" required>
+        </div>
+        <div>
+            <span>Aceita contatos via</span>
+            <br>
+            <input type="checkbox" id="campo-tipo-contato-email" name="tipo-contato" value="email">
+            <label for="campo-tipo-contato-email">E-mail</label>
+            <input type="checkbox" id="campo-tipo-contato-zap" name="tipo-contato" value="zap">
+            <label for="campo-tipo-contato-zap">Zap</label>
+            <input type="checkbox" id="campo-tipo-contato-telefone" name="tipo-contato" value="telefone">
+            <label for="campo-tipo-contato-telefone">Telefone</label>
+        </div>
+        <div>
+            <span>Pagamento</span>
+            <br>
+            <input type="radio" id="campo-pagamento-pix" name="pagamento" value="pix">
+            <label for="campo-pagamento-pix">Pix</label>
+            <input type="radio" id="campo-pagamento-cc" name="pagamento" value="cc">
+            <label for="campo-pagamento-cc">Cartão de Crédito</label>
+        </div>
+        <div>
+            <button type="submit">Salvar</button>
+        </div>
+    </form>
+</body>
+</html>
